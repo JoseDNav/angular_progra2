@@ -1,0 +1,26 @@
+<!-- <h2>numero 1</h2>
+<img src={{juegos[0].img}}>
+<p>{{juegos[0].descripcion}}</p>
+
+<a href={{juegos[0].link}} class="btn btn-primary"> ir a la web</a>
+
+
+<h2>numero 2</h2>
+<img src={{juegos[1].img}}>
+<p>{{juegos[1].descripcion}}</p>
+
+<a href={{juegos[1].link}} class="btn btn-primary">ir a la web</a>
+ -->
+
+<div *ngFor="let juego of juegos">
+
+    <h1>{{juego.titulo}}</h1>
+    <img src={{juego.img}}>
+    <p>{{juego.descripcion}}</p>
+    
+    <a href={{juego.link}} class="btn btn-primary"> ir a la web</a>
+
+
+</div>
+
+<button (click)="agregarjuego()">agregar juego</button>
